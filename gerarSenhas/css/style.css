@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    margin: 0;
+    background-color:rgb(0, 0, 66) ;
+    font-family: 'Lemon Milk';
+    font-size: 15px;
+}
+
+/* Css cabeçalho */
+header{
+   display: flex;
+   justify-content: space-around;
+   color: white;
+   height: 10vh;
+}
+
+/* Css da main */
+main{
+    margin-top: 10px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+div{
+    margin-top: 10px;
+}
+
+/* Css do input */
+#campo{
+    display: flex;
+    flex-direction: column;
+}
+
+#campo input{
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+/* css da checkbox */
+main input[type='checkbox']{
+    transform:scale(1.5);
+}
+
+/* Css do botão */
+#div-botao {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 16px;
+    width: 150px;
+    cursor: pointer;
+    background-color:rgb(0, 0, 66);;
+    color: white;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 6px 20px;
+}
+
+/* css do output das senhas */
+textarea{
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* css das caixas de texto */
+
+#passwords {
+    background-color: rgb(0, 0, 66);
+    border: 3px solid rgb(22, 23, 125);
+    color: rgb(255, 255, 255);
+}
+
+#pswQtd {
+    background-color: rgb(0, 0, 66);
+    border: 3px solid rgb(22, 23, 125);
+    color: #f2f2f2;
+}
+
+#pswLength {
+    background-color: rgb(0, 0, 66);
+    border: 3px solid rgb(22, 23, 125);
+    color: #f2f2f2;
+}
+
+.chkboxes {
+    font-size: 20px;
+}

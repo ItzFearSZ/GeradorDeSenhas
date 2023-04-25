@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Gerador de Senhas</h1>
+    </header>
+
+    <main>
+       <div>
+        <div id="campo">
+            <label for="pswLength">Digite o tamanho da senha: </label>
+            <input type="number" name="" id="pswLength" min="1" max="72"><br>
+    
+       
+            <label for="pswQtd">Digite o número de senhas: </label>
+            <input type="number" name="" id="pswQtd" min="1" max="15"><br>
+            
+
+        </div>
+       
+        <div>
+            <input  type="checkbox" name="" id="carespecial">
+            <label class="chkboxes" for="carespecial">Incluir Caractér Especial? '!@#$%&*()?*'</label>
+
+        </div>
+        
+        <div>
+            <input  type="checkbox" name="teste" id="incNums">
+            <label class="chkboxes" for="incNums">Incluir números? '1234567890'</label>
+        </div>
+        
+        <div> 
+            <input  type="checkbox" name="teste" id="incUpper">
+            <label class="chkboxes" for="incUpper">Incluir maiusculas? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</label>
+        </div>
+
+        <div id="div-botao">
+            <button onclick="gerarSenha()">Gerar Senhas</button>
+            <button onclick="limparSenha()">Limpar Senhas</button>
+
+        </div><Br>
+        <h5>Senhas Geradas</h2>
+        <textarea name="" id="passwords" cols="72" rows="15" readonly></textarea>
+       </div>
+    </main>
+
+</body>
+</html>
